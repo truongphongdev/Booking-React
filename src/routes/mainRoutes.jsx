@@ -5,5 +5,5 @@ import RegisterPage from "../pages/RegisterPage/RegisterPage";
 export default [
   { path: "/login", element: <LoginPage /> },
   { path: "/register", element: <RegisterPage /> },
-  { path: "*", element: <NotFoundPage /> },
+  // { path: "*", element: <NotFoundPage /> },
 ];

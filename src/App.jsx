@@ -5,6 +5,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import mainRoutes from "./routes/mainRoutes"; // Import mảng routes
+import adminRoutes from "./routes/adminRoutes";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <Routes>
         {/* Map Main */}
         {mainRoutes.map((r, i) => (
+          <Route key={i} path={r.path} element={r.element} />
+        ))}
+        {adminRoutes.map((r, i) => (
           <Route key={i} path={r.path} element={r.element} />
         ))}
       </Routes>
